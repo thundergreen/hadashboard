@@ -1,0 +1,172 @@
+html {
+	font-size:100%;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+	padding:0;
+}
+
+body {
+	margin:0;
+	background:transparent url(/custom_css/clear_sky/img/background_1.jpg) no-repeat 0 0 fixed;
+	background-size:cover;
+	font-size:15px;
+	color:#fff;
+	padding:0;
+	font-family:'Helvetica Neue','Helvetica','Open Sans','Arial';
+}
+
+b,strong {
+	font-weight:700;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+img {
+	border:0;
+	-ms-interpolation-mode:bicubic;
+	vertical-align:middle;
+}
+
+img,object {
+	max-width:100%;
+}
+
+iframe {
+	max-width:100%;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+}
+
+td {
+	vertical-align:middle;
+}
+
+ul,ol {
+	padding:0;
+	margin:0;
+}
+
+h4,h5,p {
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	padding:0;
+	margin:0;
+	margin-bottom:6px;
+	text-align:center;
+	font-size:100%;
+	font-weight:200;
+}
+
+h2 {
+	padding:0;
+	margin:0;
+	font-size:220%;
+	font-weight:400;
+/* 	color:#fff; */
+}
+
+h3 {
+	padding:0;
+	margin:0;
+	font-size:125%;
+	font-weight:300;
+	color:#fff;
+}
+
+.dashboard_main {
+	margin:0 auto;
+}
+
+.gridster {
+	margin:0 auto;
+}
+
+.icon-background {
+	pointer-events:none;
+	width:100%!important;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	opacity:.1;
+	font-size:1375%;
+	text-align:center;
+	margin-top:82px;
+}
+
+.list-nostyle {
+	list-style:none;
+}
+
+.gridster ul {
+	list-style:none;
+}
+
+.gs-w {
+	width:100%;
+	display:table;
+	cursor:pointer;
+}
+
+.widget {
+	padding:0;
+	text-align:center;
+	width:100%;
+	display:table-cell;
+	vertical-align:middle;
+	background-color:#444;
+	border-radius: 4px;
+}
+
+.title {
+	color:#fff;
+}
+
+.icon-inactive {
+	color:#888;
+	font-size:300%;
+}
+
+.icon-active {
+	font-size:300%;
+}
+
+.icon
+{
+  font-size: 300%;
+}
+
+#container {
+	padding-top:0;
+}
+
+.unit {
+	font-size:130%!important;
+	vertical-align:baseline!important;
+}
+
+.value
+{
+  color: inherit;
+}
+
+.valueunit
+{
+  top: 52px !important;
+}
+
+.state_text
+{
+  text-transform: capitalize;
+  font-weight: 400;
+}
