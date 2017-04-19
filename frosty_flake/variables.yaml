@@ -28,7 +28,7 @@
 #
 
 head_includes:
-  - <script type="text/javascript" src="/custom_css/dark_flower/js/helpers.js"></script>
+  - <script type="text/javascript" src="/custom_css/frosty_flake/js/helpers.js"></script>
 # Custom body includes - should be a YAML List, e.g.:
 #
 #body_includes:
@@ -49,10 +49,15 @@ body_includes:
 white: "#fff"
 red: "#ff0055"
 green: "#aaff00"
-blue: "#f2f375"
+brtgreen: "#00FE11"
+blue: "#2093f5"
+ltblue: "#01F1FE"
 purple: "#aa00ff"
+pink: "#ED0090"
+ltpink: "#F24D76"
 yellow: "#ffff00"
-orange: "#ffaa00"
+ltyellow: "#FFC349"
+orange: "#FF7600"
 
 orange_background: "background-color: rgba(243, 167, 77, 0.3); color: white"
 red_background: "background-color: rgba(195, 99, 59, 0.3); color: white"
@@ -72,17 +77,17 @@ gray_medium: "#666"
 gray_light: "#888"
 
 #Page and widget defaults
-background_style: "background-color: rgba(0,0,0,0.4);"
+background_style: "background-color: rgba(255,255,255,0.7);"
 text_style: "font-size: 50%; color: #fff"
 
 #These are used for icons and indicators
-style_inactive: "color: $gray_light"
-style_active: "color: $orange"
-style_active_warn: "color: $red"
-style_info: "color: $blue"
-style_title: "color: $white; font-weight: 400"
-style_title2: "color: $white; font-weight: 400"
-style_text: "color: $white"
+style_inactive: "color: $gray_light; text-shadow: 2px 2px #5f5555"
+style_active: "color: $blue; text-shadow: 2px 2px #5f5555"
+style_active_warn: "color: $red; text-shadow: 2px 2px #5f5555"
+style_info: "color: $blue; text-shadow: 1px 1px #5f5555"
+style_title: "color: $white; font-weight: 400; text-shadow: 1px 1px #5f5555"
+style_title2: "color: $white; font-weight: 400; text-shadow: 1px 1px #5f5555"
+style_text: "color: $white; text-shadow: 2px 2px #5f5555"
 
 # Widget Default Definitions
 
@@ -93,7 +98,7 @@ scene_icon_style_inactive: $style_inactive
 scene_title_style: $style_title
 scene_title2_style: $style_title2
 scene_widget_style: $background_style
-scene_state_text_style: "color: $white"
+scene_state_text_style: "color: $white; text-shadow: 2px 2px #5f5555"
 
 mode_icon_on: fa-arrows-alt
 mode_icon_off: fa-arrows-alt
@@ -102,7 +107,7 @@ mode_icon_style_inactive: $style_inactive
 mode_title_style: $style_title
 mode_title2_style: $style_title2
 mode_widget_style: $background_style
-mode_state_text_style: "color: $white"
+mode_state_text_style: "color: $white; text-shadow: 2px 2px #5f5555"
 
 script_icon_on: fa-th-large
 script_icon_off: fa-th-large
@@ -111,7 +116,7 @@ script_icon_style_inactive: $style_inactive
 script_title_style: $style_title
 script_title2_style: $style_title2
 script_widget_style: $background_style
-script_state_text_style: "color: $white"
+script_state_text_style: "color: $white; text-shadow: 2px 2px #5f5555"
 
 binary_sensor_icon_on: fa-bullseye
 binary_sensor_icon_off: fa-minus
@@ -120,7 +125,7 @@ binary_sensor_icon_style_inactive: $style_inactive
 binary_sensor_title_style: $style_title
 binary_sensor_title2_style: $style_title2
 binary_sensor_widget_style: $background_style
-binary_sensor_state_text_style: "color: $white"
+binary_sensor_state_text_style: "color: $white; text-shadow: 2px 2px #5f5555"
 
 device_tracker_icon_on: fa-user
 device_tracker_icon_off: fa-user
@@ -129,7 +134,7 @@ device_tracker_icon_style_inactive: "font-size: 250%; $style_inactive"
 device_tracker_title_style: $style_title
 device_tracker_title2_style: $style_title2
 device_tracker_widget_style: $background_style
-device_tracker_state_text_style: "color: $white; font-weight: 400"
+device_tracker_state_text_style: "color: $white; font-weight: 400; text-shadow: 2px 2px #5f5555"
 
 input_boolean_icon_on: fa-sliders
 input_boolean_icon_off: fa-sliders
@@ -138,16 +143,16 @@ input_boolean_icon_style_inactive: $style_inactive
 input_boolean_title_style: $style_title
 input_boolean_title2_style: $style_title2
 input_boolean_widget_style: $background_style
-input_boolean_state_text_style: "color: $white"
+input_boolean_state_text_style: "color: $white; text-shadow: 2px 2px #5f5555"
 
-switch_icon_on: fa-circle
-switch_icon_off: fa-circle-thin
+switch_icon_on: fa-toggle-on
+switch_icon_off: fa-toggle-off
 switch_icon_style_active: $style_active
-switch_icon_style_inactive: "$style_inactive; color: antiquewhite"  
+switch_icon_style_inactive: "$style_inactive; color: $white"  
 switch_title_style: $style_title
 switch_title2_style: $style_title2
 switch_widget_style: $background_style
-switch_state_text_style: "color: $white"
+switch_state_text_style: "color: $white; text-shadow: 2px 2px #5f5555"
 
 lock_icon_on: fa-unlock-alt
 lock_icon_off: fa-lock
@@ -156,7 +161,7 @@ lock_icon_style_inactive: $style_inactive
 lock_title_style: $style_title
 lock_title2_style: $style_title2
 lock_widget_style: $background_style
-lock_state_text_style: "color: $white"
+lock_state_text_style: "color: $white; text-shadow: 2px 2px #5f5555"
 
 cover_icon_on: fa-car
 cover_icon_off: fa-car
@@ -165,25 +170,25 @@ cover_icon_style_inactive: "font-size: 250%; $style_inactive"
 cover_title_style: $style_title
 cover_title2_style: $style_title2
 cover_widget_style: $background_style
-cover_state_text_style: "font-weight: 400; color: $white"
+cover_state_text_style: "font-weight: 400; color: $white; text-shadow: 2px 2px #5f5555"
 
-clock_date_style: "color: $white;"
-clock_time_style: "color: $white;"
+clock_date_style: "color: $pink; text-shadow: 1px 1px #939da5;"
+clock_time_style: "color: $pink; text-shadow: 1px 1px #1a1818;"
 clock_widget_style: $background_style
 
-weather_main_style: "color: $orange"
-weather_unit_style: "color: $orange"
-weather_sub_style: "color: $blue"
+weather_main_style: "color: $pink; text-shadow: 1px 1px #1a1818;"
+weather_unit_style: "color: $pink; text-shadow: 1px 1px #1a1818;"
+weather_sub_style: "color: $blue; text-shadow: 1px 1px #1a1818;"
 weather_widget_style: $background_style
 
 text_sensor_title_style: $style_title
 text_sensor_title2_style: $style_title2
-text_sensor_text_style: "color: $white"
+text_sensor_text_style: "color: $white; text-shadow: 2px 2px #5f5555"
 text_sensor_widget_style: $background_style
 
 label_title_style: $style_title
 label_title2_style: $style_title2
-label_text_style: "color: $white"
+label_text_style: "color: $white; text-shadow: 2px 2px #5f5555"
 label_widget_style: $background_style
 
 sensor_title_style: $style_title
@@ -229,11 +234,11 @@ light_icon_up: fa-plus
 light_icon_down: fa-minus
 light_title_style: $style_title
 light_title2_style: $style_title2
-light_icon_style_active: "top: 45px !important; color: $yellow"
-light_icon_style_inactive: "top: 45px !important; $style_inactive; color: antiquewhite"
-light_state_text_style: "color: $white"
-light_level_style: "color: $gray_light"
-light_unit_style:  "color: $gray_light"
+light_icon_style_active: "top: 45px !important; color: $yellow; text-shadow: 2px 2px #5f5555"
+light_icon_style_inactive: "top: 45px !important; $style_inactive; color: $white; text-shadow: 2px 2px #5f5555"
+light_state_text_style: "color: $white; text-shadow: 2px 2px #5f5555"
+light_level_style: "color: $gray_light; text-shadow: 2px 2px #5f5555"
+light_unit_style:  "color: $gray_light; text-shadow: 2px 2px #5f5555"
 light_level_up_style: "color: $gray_light"
 light_level_down_style: "color: $gray_light"
 light_widget_style: $background_style
@@ -255,8 +260,8 @@ group_icon_down: fa-minus
 group_title_style: $style_title
 group_title2_style: $style_title2
 group_icon_style_active: "top: 45px !important; $style_active"
-group_icon_style_inactive: "top: 45px !important; $style_inactive; color: antiquewhite"
-group_state_text_style: "color: $white"
+group_icon_style_inactive: "top: 45px !important; $style_inactive; color: $white"
+group_state_text_style: "color: $white; text-shadow: 2px 2px #5f5555"
 group_level_style: "color: $gray_light"
 group_level_up_style: "color: $gray_light"
 group_level_down_style: "color: $gray_light"
