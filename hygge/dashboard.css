@@ -8,9 +8,13 @@ html {
 
 body {
   overflow: hidden;
-  background-image: url(/custom_css/hygge/img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 105%;
+  background-position: center; 
+  background-image: url(/custom_css/hygge/img/living_room.jpg);
   margin: 0;
-  background-color: #F3F3F5;
+  background-color: #D8D8D8;
   font-size: 15px;
   color: #fff;
   padding: 0;
@@ -30,7 +34,7 @@ a {
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
-  vertical-align: middle;
+  vertical-align: center;
 }
 
 img, object {
